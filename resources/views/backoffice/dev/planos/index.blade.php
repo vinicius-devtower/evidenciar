@@ -18,7 +18,8 @@
                         <th>Nome</th>
                         <th>Slug</th>
                         <th>Ciclo</th>
-                        <th>Preço</th>
+                        <th>Preço mensal</th>
+                        <th>Preço anual (à vista)</th>
                         <th>Templates</th>
                         <th>Status</th>
                         <th></th>
@@ -31,6 +32,10 @@
                             <td><code>{{ $p->slug }}</code></td>
                             <td>{{ $p->billing_cycle }}</td>
                             <td>{{ $p->priceFormatted() }}</td>
+                            <td>
+                                {{ $p->annualPriceFormatted() }}
+                                <span class="text-muted small">({{ $p->annualDiscountPercent() }}% OFF{{ empty($p->annual_price_cents) ? ', auto' : '' }})</span>
+                            </td>
                             <td>
                                 @foreach ($p->templates as $t)
                                     <span class="badge bg-light text-dark border">{{ $t->name }}</span>
@@ -49,7 +54,7 @@
                             </td>
                         </tr>
                     @empty
-                        <tr><td colspan="7" class="text-center text-muted py-4">Nenhum plano cadastrado.</td></tr>
+                        <tr><td colspan="8" class="text-center text-muted py-4">Nenhum plano cadastrado.</td></tr>
                     @endforelse
                 </tbody>
             </table>

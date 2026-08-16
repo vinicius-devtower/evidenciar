@@ -1,8 +1,13 @@
 @if(!empty($plan))
+    @php($isAnnual = ($cycle ?? 'monthly') === 'annual')
     <div class="ev-plan-ribbon">
         <div class="ev-plan-ribbon__label">Plano escolhido</div>
         <div class="ev-plan-ribbon__name">{{ $plan->name }}</div>
-        <div class="ev-plan-ribbon__price">{{ $plan->priceFormatted() }}<span>/mês</span></div>
+        @if ($isAnnual)
+            <div class="ev-plan-ribbon__price">{{ $plan->annualPriceFormatted() }}<span>à vista/ano</span></div>
+        @else
+            <div class="ev-plan-ribbon__price">{{ $plan->priceFormatted() }}<span>/mês</span></div>
+        @endif
     </div>
 
     @push('head')

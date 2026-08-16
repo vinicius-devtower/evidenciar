@@ -58,23 +58,26 @@ class PlanoController extends Controller
     private function persist(Request $request, Plan $plan): Plan
     {
         $data = $request->validate([
-            'slug'          => ['required', 'string', 'max:50'],
-            'name'          => ['required', 'string', 'max:100'],
-            'description'   => ['nullable', 'string', 'max:500'],
-            'price_cents'   => ['required', 'integer', 'min:0'],
-            'billing_cycle' => ['required', Rule::in(['monthly', 'yearly'])],
-            'is_active'     => ['nullable', 'in:0,1'],
-            'template_ids'  => ['nullable', 'array'],
-            'template_ids.*'=> ['integer', 'exists:templates,id'],
+            'slug'               => ['required', 'string', 'max:50'],
+            'name'               => ['required', 'string', 'max:100'],
+            'description'        => ['nullable', 'string', 'max:500'],
+            'price_cents'        => ['required', 'integer', 'min:0'],
+            'annual_price_cents' => ['nullable', 'integer', 'min:0'],
+            'billing_cycle'      => ['required', Rule::in(['monthly', 'yearly'])],
+            'is_active'          => ['nullable', 'in:0,1'],
+            'template_ids'       => ['nullable', 'array'],
+            'template_ids.*'     => ['integer', 'exists:templates,id'],
         ]);
 
         $plan->fill([
-            'slug'          => $data['slug'],
-            'name'          => $data['name'],
-            'description'   => $data['description'] ?? null,
-            'price_cents'   => $data['price_cents'],
-            'billing_cycle' => $data['billing_cycle'],
-            'is_active'     => ($data['is_active'] ?? '0') === '1',
+            'slug'               => $data['slug'],
+            'name'               => $data['name'],
+            'description'        => $data['description'] ?? null,
+            'price_cents'        => $data['price_cents'],
+            // Vazio = cai no fallback de 20% OFF calculado (ver Plan::annualPriceCents()).
+            'annual_price_cents' => $data['annual_price_cents'] ?? null,
+            'billing_cycle'      => $data['billing_cycle'],
+            'is_active'          => ($data['is_active'] ?? '0') === '1',
         ])->save();
 
         $plan->templates()->sync($data['template_ids'] ?? []);

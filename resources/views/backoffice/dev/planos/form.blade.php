@@ -32,10 +32,13 @@
                               class="form-control">{{ old('description', $plan->description) }}</textarea>
                 </div>
                 <div class="col-md-4">
-                    <label class="form-label">Preço (centavos)</label>
+                    <label class="form-label">Preço mensal (centavos)</label>
                     <input name="price_cents" type="number" min="0"
                            value="{{ old('price_cents', $plan->price_cents) }}"
                            class="form-control" required>
+                    @if ($plan->exists)
+                        <div class="form-text">{{ $plan->priceFormatted() }}/mês</div>
+                    @endif
                 </div>
                 <div class="col-md-4">
                     <label class="form-label">Ciclo</label>
@@ -52,6 +55,21 @@
                                {{ old('is_active', $plan->is_active) ? 'checked' : '' }}>
                         <label for="isActive" class="form-check-label">Plano ativo</label>
                     </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label">Preço anual à vista (centavos)</label>
+                    <input name="annual_price_cents" type="number" min="0"
+                           value="{{ old('annual_price_cents', $plan->annual_price_cents) }}"
+                           class="form-control" placeholder="Vazio = calcula 20% OFF automático">
+                    @if ($plan->exists)
+                        <div class="form-text">
+                            {{ $plan->annualPriceFormatted() }} à vista
+                            ({{ $plan->annualDiscountPercent() }}% OFF, economia de {{ $plan->annualSavingsFormatted() }})
+                            @if (empty($plan->annual_price_cents))
+                                — <em>calculado automaticamente, nenhum valor manual salvo ainda</em>
+                            @endif
+                        </div>
+                    @endif
                 </div>
             </div>
         </div>

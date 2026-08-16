@@ -188,7 +188,7 @@
         <div class="d-flex justify-content-between align-items-center mt-4">
             <a href="{{ route('jornada.step2') }}" class="btn-ev-ghost">← Voltar</a>
             <button type="submit" class="btn-ev" id="jornada-submit">
-                Finalizar @if(!empty($plan)) — {{ $plan->priceFormatted() }} @endif
+                Finalizar @if(!empty($plan)) — {{ $plan->priceFormattedForCycle($cycle ?? 'monthly') }}@if(($cycle ?? 'monthly') === 'annual') /ano @endif @endif
             </button>
         </div>
     </form>

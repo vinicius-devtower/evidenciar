@@ -72,7 +72,7 @@
     <div class="container mt-5 mb-5">
         <div class="row text-center">
             <div>
-                <a href="{{ route('jornada.start') }}" class="btn-primary">Quero meu site a partir de R$46,32 / mês</a>
+                <a href="{{ route('jornada.start') }}" class="btn-primary">Quero meu site a partir de {{ optional($plans['start'] ?? null)->priceFormatted() ?? 'R$ 47,90' }} / mês</a>
             </div>
         </div>
     </div>

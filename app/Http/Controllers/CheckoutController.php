@@ -64,7 +64,12 @@ class CheckoutController extends Controller
             return redirect('/#pricing')
                 ->with('warning', 'Escolha um plano para continuar.');
         }
-        $amount = $plan->price_cents / 100;
+
+        // Ciclo de cobrança escolhido (mensal por padrão, anual à vista se
+        // veio ?cycle=annual lá na LP/jornada) — decide se cobra o preço
+        // mensal ou o anual do plano.
+        $cycle  = ($journey['cycle'] ?? 'monthly') === 'annual' ? 'annual' : 'monthly';
+        $amount = $plan->priceCentsForCycle($cycle) / 100;
 
         $templateId = $journey['template_id']
             ?? optional(Template::where('status', 'active')->first())->id;

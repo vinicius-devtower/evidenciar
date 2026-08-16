@@ -47,14 +47,18 @@ class Plan extends Model
         ],
     ];
 
+    /** Desconto padrão do ciclo anual quando o plano não tem annual_price_cents definido. */
+    public const ANNUAL_DEFAULT_DISCOUNT = 0.20;
+
     protected $fillable = [
-        'slug', 'name', 'description', 'price_cents', 'billing_cycle', 'is_active', 'features',
+        'slug', 'name', 'description', 'price_cents', 'annual_price_cents', 'billing_cycle', 'is_active', 'features',
     ];
 
     protected $casts = [
-        'is_active'   => 'boolean',
-        'price_cents' => 'integer',
-        'features'    => 'array',
+        'is_active'          => 'boolean',
+        'price_cents'        => 'integer',
+        'annual_price_cents' => 'integer',
+        'features'           => 'array',
     ];
 
     public function templates()
@@ -65,7 +69,68 @@ class Plan extends Model
 
     public function priceFormatted(): string
     {
-        return 'R$ ' . number_format($this->price_cents / 100, 2, ',', '.');
+        return $this->formatCents($this->price_cents);
+    }
+
+    /**
+     * Preço anual "à vista" em centavos. Usa annual_price_cents se
+     * preenchido (editável em /dev/planos); senão calcula
+     * ANNUAL_DEFAULT_DISCOUNT sobre 12x o preço mensal.
+     */
+    public function annualPriceCents(): int
+    {
+        if (!empty($this->annual_price_cents)) {
+            return $this->annual_price_cents;
+        }
+        return (int) round($this->price_cents * 12 * (1 - self::ANNUAL_DEFAULT_DISCOUNT));
+    }
+
+    public function annualPriceFormatted(): string
+    {
+        return $this->formatCents($this->annualPriceCents());
+    }
+
+    /** Preço anual dividido por 12 — pra mostrar como "R$X/mês" no plano anual. */
+    public function annualMonthlyEquivalentFormatted(): string
+    {
+        return $this->formatCents((int) round($this->annualPriceCents() / 12));
+    }
+
+    /** Quanto se economiza por ano em relação a pagar 12x o valor mensal. */
+    public function annualSavingsCents(): int
+    {
+        return max(0, ($this->price_cents * 12) - $this->annualPriceCents());
+    }
+
+    public function annualSavingsFormatted(): string
+    {
+        return $this->formatCents($this->annualSavingsCents());
+    }
+
+    /** % de desconto real do anual em relação a 12x o mensal (arredondado). */
+    public function annualDiscountPercent(): int
+    {
+        $fullYear = $this->price_cents * 12;
+        if ($fullYear <= 0) {
+            return 0;
+        }
+        return (int) round(($this->annualSavingsCents() / $fullYear) * 100);
+    }
+
+    /** Preço em centavos pro ciclo informado ('monthly' ou 'annual'). */
+    public function priceCentsForCycle(string $cycle): int
+    {
+        return $cycle === 'annual' ? $this->annualPriceCents() : $this->price_cents;
+    }
+
+    public function priceFormattedForCycle(string $cycle): string
+    {
+        return $this->formatCents($this->priceCentsForCycle($cycle));
+    }
+
+    protected function formatCents(int $cents): string
+    {
+        return 'R$ ' . number_format($cents / 100, 2, ',', '.');
     }
 
     /**

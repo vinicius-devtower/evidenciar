@@ -26,6 +26,12 @@
     <div class="container">
         <div class="row gy-4 justify-content-center mt-5">
 
+            @php
+                $planStart        = $plans['start'] ?? null;
+                $planProfissional = $plans['profissional'] ?? null;
+                $planVip          = $plans['gestao_vip'] ?? null;
+            @endphp
+
             {{-- START --}}
             <div class="col-lg-4">
                 <div class="pricing-card" data-plan="start">
@@ -33,20 +39,29 @@
                     <h3>Plano Start</h3>
                     <p class="tagline">Para quem está começando</p>
 
-                    <div class="price" data-price="">R$ 46,32</div>
+                    @if ($planStart)
+                        <div class="price">
+                            <span class="price-monthly">{{ $planStart->priceFormatted() }}</span>
+                            <span class="price-annual d-none">{{ $planStart->annualMonthlyEquivalentFormatted() }}</span>
+                        </div>
+                        <div class="price-annual-note d-none small text-muted">{{ $planStart->annualPriceFormatted() }} à vista/ano</div>
 
-                    <hr>
-                    <div class="billing-toggle">
-                        <label class="switch">
-                            <input type="checkbox" class="toggle-input" checked>
-                            <span class="slider"></span>
-                        </label>
-                        <span>Anual</span>
-                        <span class="discount">20% OFF | R$ 120,00 economia</span>
-                    </div>
-                    <hr>
+                        <hr>
+                        <div class="billing-toggle">
+                            <label class="switch">
+                                <input type="checkbox" class="toggle-input">
+                                <span class="slider"></span>
+                            </label>
+                            <span>Anual</span>
+                            <span class="discount">{{ $planStart->annualDiscountPercent() }}% OFF | {{ $planStart->annualSavingsFormatted() }} economia</span>
+                        </div>
+                        <hr>
 
-                    <a href="{{ route('jornada.start', ['plan' => 'start']) }}" class="btn btn-pricing w-100">Escolher Plano ↗</a>
+                        <a href="{{ route('jornada.start', ['plan' => 'start']) }}"
+                           data-monthly-url="{{ route('jornada.start', ['plan' => 'start']) }}"
+                           data-annual-url="{{ route('jornada.start', ['plan' => 'start', 'cycle' => 'annual']) }}"
+                           class="btn btn-pricing w-100 js-plan-link">Escolher Plano ↗</a>
+                    @endif
 
                     <div class="feature-group">
                         <h4>Personalize</h4>
@@ -86,20 +101,29 @@
                     <h3 class="text-white">Plano Profissional</h3>
                     <p class="tagline">Para escritórios em crescimento</p>
 
-                    <div class="price" data-price="">R$ 97,70</div>
+                    @if ($planProfissional)
+                        <div class="price">
+                            <span class="price-monthly">{{ $planProfissional->priceFormatted() }}</span>
+                            <span class="price-annual d-none">{{ $planProfissional->annualMonthlyEquivalentFormatted() }}</span>
+                        </div>
+                        <div class="price-annual-note d-none small text-white-50">{{ $planProfissional->annualPriceFormatted() }} à vista/ano</div>
 
-                    <hr>
-                    <div class="billing-toggle">
-                        <label class="switch">
-                            <input type="checkbox" class="toggle-input" checked>
-                            <span class="slider"></span>
-                        </label>
-                        <span>Anual</span>
-                        <span class="discount">20% OFF | R$ 120,00 economia</span>
-                    </div>
-                    <hr>
+                        <hr>
+                        <div class="billing-toggle">
+                            <label class="switch">
+                                <input type="checkbox" class="toggle-input">
+                                <span class="slider"></span>
+                            </label>
+                            <span>Anual</span>
+                            <span class="discount">{{ $planProfissional->annualDiscountPercent() }}% OFF | {{ $planProfissional->annualSavingsFormatted() }} economia</span>
+                        </div>
+                        <hr>
 
-                    <a href="{{ route('jornada.start', ['plan' => 'profissional']) }}" class="btn btn-pricing w-100">Escolher Plano ↗</a>
+                        <a href="{{ route('jornada.start', ['plan' => 'profissional']) }}"
+                           data-monthly-url="{{ route('jornada.start', ['plan' => 'profissional']) }}"
+                           data-annual-url="{{ route('jornada.start', ['plan' => 'profissional', 'cycle' => 'annual']) }}"
+                           class="btn btn-pricing w-100 js-plan-link">Escolher Plano ↗</a>
+                    @endif
 
                     <div class="feature-group">
                         <h4>Personalize</h4>
@@ -139,20 +163,29 @@
                     <h3>Gestão VIP</h3>
                     <p class="tagline">Para quem não tem tempo a perder</p>
 
-                    <div class="price" data-price="">R$ 297,90</div>
+                    @if ($planVip)
+                        <div class="price">
+                            <span class="price-monthly">{{ $planVip->priceFormatted() }}</span>
+                            <span class="price-annual d-none">{{ $planVip->annualMonthlyEquivalentFormatted() }}</span>
+                        </div>
+                        <div class="price-annual-note d-none small text-muted">{{ $planVip->annualPriceFormatted() }} à vista/ano</div>
 
-                    <div class="billing-toggle">
-                        <label class="switch">
-                            <input type="checkbox" class="toggle-input" checked>
-                            <span class="slider"></span>
-                        </label>
-                        <span>Anual</span>
-                        <span class="discount">20% OFF | R$ 120,00 economia</span>
-                    </div>
+                        <div class="billing-toggle">
+                            <label class="switch">
+                                <input type="checkbox" class="toggle-input">
+                                <span class="slider"></span>
+                            </label>
+                            <span>Anual</span>
+                            <span class="discount">{{ $planVip->annualDiscountPercent() }}% OFF | {{ $planVip->annualSavingsFormatted() }} economia</span>
+                        </div>
 
-                    <hr>
+                        <hr>
 
-                    <a href="{{ route('jornada.start', ['plan' => 'gestao_vip']) }}" class="btn btn-pricing w-100">Escolher Plano ↗</a>
+                        <a href="{{ route('jornada.start', ['plan' => 'gestao_vip']) }}"
+                           data-monthly-url="{{ route('jornada.start', ['plan' => 'gestao_vip']) }}"
+                           data-annual-url="{{ route('jornada.start', ['plan' => 'gestao_vip', 'cycle' => 'annual']) }}"
+                           class="btn btn-pricing w-100 js-plan-link">Escolher Plano ↗</a>
+                    @endif
 
                     <div class="feature-group">
                         <h4>Personalize</h4>
@@ -211,3 +244,34 @@
         </div>
     </div>
 </section>
+
+<script>
+    // Toggle Mensal/Anual por card — cada card tem seu próprio switch.
+    // Desligado (padrão) = mensal. Ligado = anual (mostra equivalente/mês,
+    // nota do valor à vista, desconto real do plano, e troca o link de
+    // "Escolher Plano" pra levar ?cycle=annual pra jornada).
+    document.querySelectorAll('.pricing-card').forEach(function (card) {
+        var toggle = card.querySelector('.toggle-input');
+        if (!toggle) return;
+
+        function apply() {
+            var annual = toggle.checked;
+            card.querySelectorAll('.price-monthly').forEach(function (el) {
+                el.classList.toggle('d-none', annual);
+            });
+            card.querySelectorAll('.price-annual').forEach(function (el) {
+                el.classList.toggle('d-none', !annual);
+            });
+            card.querySelectorAll('.price-annual-note').forEach(function (el) {
+                el.classList.toggle('d-none', !annual);
+            });
+            var link = card.querySelector('.js-plan-link');
+            if (link) {
+                link.href = annual ? link.dataset.annualUrl : link.dataset.monthlyUrl;
+            }
+        }
+
+        toggle.addEventListener('change', apply);
+        apply();
+    });
+</script>

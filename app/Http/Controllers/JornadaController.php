@@ -26,6 +26,7 @@ class JornadaController extends Controller
      * Aceita opcionalmente:
      *   ?template=slug  — fixa o template escolhido
      *   ?plan=slug      — fixa o plano escolhido na LP (start/profissional/gestao_vip)
+     *   ?cycle=annual   — fixa o ciclo de cobrança anual (padrão: mensal)
      */
     public function start(Request $request)
     {
@@ -38,6 +39,16 @@ class JornadaController extends Controller
                     $this->mergeSession(['plan_id' => $plan->id, 'plan_slug' => $plan->slug]);
                 }
             }
+        }
+
+        // Ciclo de cobrança — só aceita 'monthly'/'annual', padrão 'monthly'.
+        // Uma vez fixado (LP com ?cycle=annual), fica valendo o resto da
+        // jornada mesmo que o usuário volte pra essa tela sem o parâmetro.
+        if ($request->filled('cycle')) {
+            $cycle = $request->input('cycle') === 'annual' ? 'annual' : 'monthly';
+            $this->mergeSession(['cycle' => $cycle]);
+        } elseif (!Session::has(self::SESSION_KEY . '.cycle')) {
+            $this->mergeSession(['cycle' => 'monthly']);
         }
 
         // Se não veio plano e nada ainda em sessão, deixamos em branco —
@@ -59,6 +70,7 @@ class JornadaController extends Controller
         return view('jornada.start', [
             'template' => $template,
             'plan'     => $this->currentPlan(),
+            'cycle'    => $this->currentCycle(),
         ]);
     }
 
@@ -69,8 +81,9 @@ class JornadaController extends Controller
         }
 
         return view('jornada.step-1', [
-            'data' => Session::get(self::SESSION_KEY, []),
-            'plan' => $plan,
+            'data'  => Session::get(self::SESSION_KEY, []),
+            'plan'  => $plan,
+            'cycle' => $this->currentCycle(),
         ]);
     }
 
@@ -107,8 +120,9 @@ class JornadaController extends Controller
         }
 
         return view('jornada.step-2', [
-            'data' => Session::get(self::SESSION_KEY, []),
-            'plan' => $plan,
+            'data'  => Session::get(self::SESSION_KEY, []),
+            'plan'  => $plan,
+            'cycle' => $this->currentCycle(),
         ]);
     }
 
@@ -143,8 +157,9 @@ class JornadaController extends Controller
         }
 
         return view('jornada.step-3', [
-            'data' => Session::get(self::SESSION_KEY, []),
-            'plan' => $plan,
+            'data'  => Session::get(self::SESSION_KEY, []),
+            'plan'  => $plan,
+            'cycle' => $this->currentCycle(),
         ]);
     }
 
@@ -201,6 +216,15 @@ class JornadaController extends Controller
             return null;
         }
         return Plan::where('is_active', true)->find($planId);
+    }
+
+    /**
+     * Ciclo de cobrança atual da sessão ('monthly' ou 'annual').
+     */
+    protected function currentCycle(): string
+    {
+        $cycle = Session::get(self::SESSION_KEY . '.cycle', 'monthly');
+        return $cycle === 'annual' ? 'annual' : 'monthly';
     }
 
     /**
