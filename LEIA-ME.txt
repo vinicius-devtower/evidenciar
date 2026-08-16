@@ -1,0 +1,31 @@
+
+Estamos criando um SaaS com:
+
+LP pronta
+Checkout + WeBHOOK FUNCIONANDO
+Criação automática de:
+    Client
+    User
+    Site
+    Subscription
+Sistema de publicação com fila
+HTML compilado (compiled_html) para evitar a carga do bland
+Separação de usuários admin e client
+Estutua mult-tenant com client_id
+
+client_id = base do isolamento
+Global Scope + Trait = filtragem automática
+Admin NÃO usa scope
+Cliente usa scope
+
+Recentemente melhorei as Rotas e separação de contextos mas falta fechar o CRUD de usuários no /admin
+
+Meu próximo passo é
+
+1 - Finalizar o CRUD de usuários dentro do /admin, onde um usuário admin pode criar outros usuários
+
+2 - Finalizar o fluxo:
+Usuário acessa LP --> Preenche Formulário --> Recebe Instruções de Acesso no E-mail --> Realiza o Primeiro Acesso
+
+3 - Incluir checkout de pagamento no formulário da lp
+

@@ -1,0 +1,11 @@
+
+#hero{
+    height: 100vh;
+    background: url('https://placehold.co/1920x1080.png');
+    background-position: center;
+}
+#hero h1{}
+#hero .texto-apoio{}
+#hero .menu-container{}
+#hero .menu-container .btn-ver-planos{}
+#hero .menu-container .btn-ver-templates{}

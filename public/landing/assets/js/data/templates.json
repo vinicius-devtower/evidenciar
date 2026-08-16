@@ -1,0 +1,266 @@
+[
+  {
+    "title": "Advogado Criminal",
+    "desc": "Para quem precisa transmitir autoridade e urgência.",
+    "img": "assets/img/templates/thumb/Axis-bootstrap-website-template-md.webp",
+    "plan": "start",
+    "gallery": [
+      "assets/img/templates/thumb/Axis-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Trabalhista",
+    "desc": "Focado em gerar contatos de pessoas com dúvidas trabalhistas.",
+    "img": "assets/img/templates/thumb/Landify-bootstrap-website-template-md.webp",
+    "plan": "start",
+    "gallery": [
+      "assets/img/templates/thumb/Landify-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Previdenciário",
+    "desc": "Explica benefícios e gera confiança para o cliente.",
+    "img": "assets/img/templates/thumb/Clarity-bootstrap-website-template-md.webp",
+    "plan": "start",
+    "gallery": [
+      "assets/img/templates/thumb/Clarity-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Empresarial",
+    "desc": "Visual corporativo para atrair empresas.",
+    "img": "assets/img/templates/thumb/CoreBiz-bootstrap-website-template-md.webp",
+    "plan": "start",
+    "gallery": [
+      "assets/img/templates/thumb/CoreBiz-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado de Família",
+    "desc": "Comunicação mais humana para casos sensíveis.",
+    "img": "assets/img/templates/thumb/LeadPage-bootstrap-website-template-md.webp",
+    "plan": "start",
+    "gallery": [
+      "assets/img/templates/thumb/LeadPage-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Civil",
+    "desc": "Versátil para diversas áreas do direito.",
+    "img": "assets/img/templates/thumb/Nexa-bootstrap-website-template-md.webp",
+    "plan": "professional",
+    "gallery": [
+      "assets/img/templates/thumb/Nexa-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Imobiliário",
+    "desc": "Ideal para compra, venda e regularização de imóveis.",
+    "img": "assets/img/templates/thumb/Constructify-bootstrap-website-template-md.webp",
+    "plan": "professional",
+    "gallery": [
+      "assets/img/templates/thumb/Constructify-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Digital",
+    "desc": "Para quem quer um visual moderno e tecnológico.",
+    "img": "assets/img/templates/thumb/UpScale-bootstrap-website-template-md.webp",
+    "plan": "professional",
+    "gallery": [
+      "assets/img/templates/thumb/UpScale-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Premium",
+    "desc": "Para posicionamento de alto valor.",
+    "img": "assets/img/templates/thumb/Elevate-bootstrap-website-template-md.webp",
+    "plan": "professional",
+    "gallery": [
+      "assets/img/templates/thumb/Elevate-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Minimalista",
+    "desc": "Design limpo e direto ao ponto.",
+    "img": "assets/img/templates/thumb/FolioOne-bootstrap-website-template-md.webp",
+    "plan": "professional",
+    "gallery": [
+      "assets/img/templates/thumb/FolioOne-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Consultivo",
+    "desc": "Perfeito para atendimento estratégico.",
+    "img": "assets/img/templates/thumb/Strive-bootstrap-website-template-md.webp",
+    "plan": "vip",
+    "gallery": [
+      "assets/img/templates/thumb/Strive-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Startups",
+    "desc": "Site multi page com blog e conteúdo gerado por IA para fortalecer autoridade e gerar demanda",
+    "img": "assets/img/templates/thumb/Orbit-bootstrap-website-template-md.webp",
+    "plan": "vip",
+    "gallery": [
+      "assets/img/templates/thumb/Orbit-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Tributário",
+    "desc": "Site multi page com blog e conteúdo gerado por IA para fortalecer autoridade e gerar demanda",
+    "img": "assets/img/templates/thumb/Creativo-bootstrap-website-template-md.webp",
+    "plan": "vip",
+    "gallery": [
+      "assets/img/templates/thumb/Creativo-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Público",
+    "desc": "Site multi page com blog e conteúdo gerado por IA para fortalecer autoridade e gerar demanda",
+    "img": "assets/img/templates/thumb/UniPulse-bootstrap-website-template-md.webp",
+    "plan": "vip",
+    "gallery": [
+      "assets/img/templates/thumb/UniPulse-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Geral",
+    "desc": "Site multi page com blog e conteúdo gerado por IA para fortalecer autoridade e gerar demanda",
+    "img": "assets/img/templates/thumb/Stratify-bootstrap-website-template-md.webp",
+    "plan": "vip",
+    "gallery": [
+      "assets/img/templates/thumb/Stratify-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Jovem",
+    "desc": "Site multi page com blog e conteúdo gerado por IA para fortalecer autoridade e gerar demanda",
+    "img": "assets/img/templates/thumb/Devin-bootstrap-website-template-md.webp",
+    "plan": "vip",
+    "gallery": [
+      "assets/img/templates/thumb/Devin-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Autoridade",
+    "desc": "Focado em construir reputação forte.",
+    "img": "assets/img/templates/thumb/Aventro-bootstrap-website-template-md.webp",
+    "plan": "start",
+    "gallery": [
+      "assets/img/templates/thumb/Aventro-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Conversão",
+    "desc": "Estruturado para gerar mais contatos.",
+    "img": "assets/img/templates/thumb/SmartStore-bootstrap-website-template-md.webp",
+    "plan": "start",
+    "gallery": [
+      "assets/img/templates/thumb/SmartStore-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Institucional",
+    "desc": "Visual mais tradicional e formal.",
+    "img": "assets/img/templates/thumb/Forma-bootstrap-website-template-md.webp",
+    "plan": "start",
+    "gallery": [
+      "assets/img/templates/thumb/Forma-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Moderno",
+    "desc": "Equilíbrio entre design e performance.",
+    "img": "assets/img/templates/thumb/Spotlight-bootstrap-website-template-md.webp",
+    "plan": "professional",
+    "gallery": [
+      "assets/img/templates/thumb/Spotlight-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Local",
+    "desc": "Pensado para quem atende na própria cidade.",
+    "img": "assets/img/templates/thumb/Travely-bootstrap-website-template-md.webp",
+    "plan": "professional",
+    "gallery": [
+      "assets/img/templates/thumb/Travely-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Especialista",
+    "desc": "Para nichos bem definidos.",
+    "img": "assets/img/templates/thumb/Landio-bootstrap-website-template-md.webp",
+    "plan": "professional",
+    "gallery": [
+      "assets/img/templates/thumb/Landio-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Estratégico",
+    "desc": "Site multi page com blog e conteúdo gerado por IA para fortalecer autoridade e gerar demanda",
+    "img": "assets/img/templates/thumb/eStore-bootstrap-website-template-md.webp",
+    "plan": "vip",
+    "gallery": [
+      "assets/img/templates/thumb/eStore-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  },
+  {
+    "title": "Advogado Presença Online",
+    "desc": "Site multi page com blog e conteúdo gerado por IA para fortalecer autoridade e gerar demanda",
+    "img": "assets/img/templates/thumb/Eventia-bootstrap-website-template-md.webp",
+    "plan": "vip",
+    "gallery": [
+      "assets/img/templates/thumb/Eventia-bootstrap-website-template-md.webp",
+      "https://placehold.co/1920x1080.png",
+      "https://placehold.co/1920x1080.png"
+    ]
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "name": "Business Site",
+    "slug": "business",
+    "version": "v1"
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "label": "Seção Principal",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Título",
+          "type": "text",
+          "required": true
+        },
+        {
+          "key": "subtitle",
+          "label": "Subtítulo",
+          "type": "textarea",
+          "required": false
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "label": "Sobre a Empresa",
+      "fields": [
+        {
+          "key": "description",
+          "label": "Descrição",
+          "type": "textarea",
+          "required": true
+        }
+      ]
+    }
+  ]
+}

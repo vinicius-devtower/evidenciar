@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "name": "Clean",
+    "slug": "clean",
+    "version": "v1",
+    "description": "Template padrão com 4 seções essenciais: apresentação, sobre, serviços e contato."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "label": "SEÇÃO 01 — Banner principal",
+      "fields": [
+        {
+          "key": "eyebrow",
+          "label": "Título suspenso",
+          "type": "text",
+          "max_chars": 30,
+          "eva": true,
+          "required": false,
+          "default": "SEU SITE PROFISSIONAL"
+        },
+        {
+          "key": "headline",
+          "label": "Título principal",
+          "type": "textarea",
+          "max_chars": 90,
+          "eva": true,
+          "required": true,
+          "default": "Transforme seu negócio com soluções sob medida"
+        },
+        {
+          "key": "subheadline",
+          "label": "Título secundário",
+          "type": "textarea",
+          "max_chars": 150,
+          "eva": true,
+          "required": false,
+          "default": "Atendimento especializado, entregas rápidas e resultados que você pode medir."
+        },
+        {
+          "key": "cta_label",
+          "label": "Botão",
+          "type": "text",
+          "max_chars": 20,
+          "eva": false,
+          "required": false,
+          "default": "Fale conosco"
+        },
+        {
+          "key": "cta_url",
+          "label": "Link do botão",
+          "type": "url",
+          "required": false,
+          "default": "#contact"
+        },
+        {
+          "key": "image_url",
+          "label": "Imagem de destaque",
+          "type": "image",
+          "required": false,
+          "default": ""
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "label": "SEÇÃO 02 — Sobre",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Título da seção",
+          "type": "text",
+          "max_chars": 60,
+          "eva": true,
+          "required": true,
+          "default": "Quem somos"
+        },
+        {
+          "key": "description",
+          "label": "Descrição",
+          "type": "textarea",
+          "max_chars": 400,
+          "eva": true,
+          "required": true,
+          "default": "Somos uma equipe dedicada a entregar qualidade em cada projeto. Com anos de experiência no mercado, unimos criatividade, técnica e proximidade com o cliente para garantir resultados reais."
+        },
+        {
+          "key": "image_url",
+          "label": "Imagem",
+          "type": "image",
+          "required": false,
+          "default": ""
+        },
+        {
+          "key": "highlight_1",
+          "label": "Destaque 1",
+          "type": "text",
+          "max_chars": 40,
+          "eva": false,
+          "required": false,
+          "default": "+10 anos de experiência"
+        },
+        {
+          "key": "highlight_2",
+          "label": "Destaque 2",
+          "type": "text",
+          "max_chars": 40,
+          "eva": false,
+          "required": false,
+          "default": "+200 clientes atendidos"
+        },
+        {
+          "key": "highlight_3",
+          "label": "Destaque 3",
+          "type": "text",
+          "max_chars": 40,
+          "eva": false,
+          "required": false,
+          "default": "Atendimento personalizado"
+        }
+      ]
+    },
+    {
+      "id": "services",
+      "label": "SEÇÃO 03 — Serviços",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Título da seção",
+          "type": "text",
+          "max_chars": 60,
+          "eva": true,
+          "required": true,
+          "default": "Nossos serviços"
+        },
+        {
+          "key": "intro",
+          "label": "Texto introdutório",
+          "type": "textarea",
+          "max_chars": 200,
+          "eva": true,
+          "required": false,
+          "default": "Soluções completas para o seu negócio."
+        },
+        {
+          "key": "service_1_title",
+          "label": "Serviço 1 · Título",
+          "type": "text",
+          "max_chars": 40,
+          "eva": true,
+          "required": false,
+          "default": "Consultoria"
+        },
+        {
+          "key": "service_1_description",
+          "label": "Serviço 1 · Descrição",
+          "type": "textarea",
+          "max_chars": 200,
+          "eva": true,
+          "required": false,
+          "default": "Análise completa e recomendações estratégicas para o seu contexto."
+        },
+        {
+          "key": "service_2_title",
+          "label": "Serviço 2 · Título",
+          "type": "text",
+          "max_chars": 40,
+          "eva": true,
+          "required": false,
+          "default": "Implementação"
+        },
+        {
+          "key": "service_2_description",
+          "label": "Serviço 2 · Descrição",
+          "type": "textarea",
+          "max_chars": 200,
+          "eva": true,
+          "required": false,
+          "default": "Execução ponta a ponta com equipe dedicada e prazos claros."
+        },
+        {
+          "key": "service_3_title",
+          "label": "Serviço 3 · Título",
+          "type": "text",
+          "max_chars": 40,
+          "eva": true,
+          "required": false,
+          "default": "Suporte"
+        },
+        {
+          "key": "service_3_description",
+          "label": "Serviço 3 · Descrição",
+          "type": "textarea",
+          "max_chars": 200,
+          "eva": true,
+          "required": false,
+          "default": "Acompanhamento contínuo para garantir que tudo funcione como deve."
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "label": "SEÇÃO 04 — Contato",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Título da seção",
+          "type": "text",
+          "max_chars": 60,
+          "eva": true,
+          "required": true,
+          "default": "Vamos conversar"
+        },
+        {
+          "key": "intro",
+          "label": "Texto introdutório",
+          "type": "textarea",
+          "max_chars": 200,
+          "eva": true,
+          "required": false,
+          "default": "Preencha o formulário ou use os contatos abaixo. Respondemos em até 1 dia útil."
+        },
+        {
+          "key": "address",
+          "label": "Endereço",
+          "type": "text",
+          "max_chars": 120,
+          "eva": false,
+          "required": false,
+          "default": "Av. Paulista, 1000 — São Paulo/SP"
+        },
+        {
+          "key": "show_map",
+          "label": "Exibir mapa (Google Maps)",
+          "type": "boolean",
+          "required": false,
+          "default": false
+        }
+      ]
+    }
+  ]
+}
