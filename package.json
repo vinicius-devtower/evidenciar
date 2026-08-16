@@ -6,6 +6,10 @@
         "build": "vite build",
         "dev": "vite"
     },
+    "dependencies": {
+        "alpinejs": "^3.15.0",
+        "lodash": "^4.17.21"
+    },
     "devDependencies": {
         "@tailwindcss/vite": "^4.0.0",
         "axios": "^1.11.0",
