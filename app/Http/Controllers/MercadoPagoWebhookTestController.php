@@ -8,6 +8,7 @@ use Illuminate\Support\Str;
 use MercadoPago\MercadoPagoConfig;
 use MercadoPago\Client\Payment\PaymentClient;
 use App\Models\Payment;
+use App\Services\MercadoPagoSettings;
 class MercadoPagoWebhookTestController extends Controller
 {
     public function handle(Request $request)
@@ -47,7 +48,7 @@ class MercadoPagoWebhookTestController extends Controller
                     'metadata' => [],
                 ];
             } else {
-                MercadoPagoConfig::setAccessToken(config('mercadopago.access_token'));
+                MercadoPagoConfig::setAccessToken(MercadoPagoSettings::accessToken());
                 $client = new PaymentClient();
                 $payment = $client->get($paymentId);
             }

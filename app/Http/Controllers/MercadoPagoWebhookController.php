@@ -22,6 +22,7 @@ use App\Models\ActivityLog;
 use App\Models\TemplateVersion;
 use App\Models\WebhookLog;
 use App\Mail\WelcomeMail;
+use App\Services\MercadoPagoSettings;
 
 /**
  * Recebe notificações do Mercado Pago.
@@ -69,7 +70,7 @@ class MercadoPagoWebhookController extends Controller
         }
 
         try {
-            MercadoPagoConfig::setAccessToken(config('mercadopago.access_token'));
+            MercadoPagoConfig::setAccessToken(MercadoPagoSettings::accessToken());
             $client = new PaymentClient();
             $payment = $client->get($paymentId);
         } catch (\Throwable $e) {

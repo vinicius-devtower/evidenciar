@@ -10,6 +10,7 @@ use App\Models\CheckoutIntent;
 use App\Models\Plan;
 use App\Models\Template;
 use App\Mail\PaymentInstructionsMail;
+use App\Services\MercadoPagoSettings;
 use Illuminate\Support\Str;
 use MercadoPago\MercadoPagoConfig;
 use MercadoPago\Client\Payment\PaymentClient;
@@ -234,9 +235,9 @@ class CheckoutController extends Controller
 
     protected function mpPaymentClient(): PaymentClient
     {
-        $accessToken = config('mercadopago.access_token');
+        $accessToken = MercadoPagoSettings::accessToken();
         if (empty($accessToken)) {
-            throw new \RuntimeException('MP_ACCESS_TOKEN não configurado no .env.');
+            throw new \RuntimeException('Access Token do Mercado Pago não configurado (nem em /dev/integracoes/mercadopago, nem em MP_ACCESS_TOKEN no .env).');
         }
         MercadoPagoConfig::setAccessToken($accessToken);
         return new PaymentClient();

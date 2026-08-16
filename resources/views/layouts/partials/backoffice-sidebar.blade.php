@@ -79,5 +79,11 @@
        class="bo-nav-link {{ $page === 'planos' ? 'active' : '' }}">
         <i class="bi bi-tags"></i> Planos
     </a>
+
+    <div class="bo-sidebar__section">Integrações</div>
+    <a href="{{ route('dev.integracoes.mercadopago') }}"
+       class="bo-nav-link {{ $page === 'integracoes-mercadopago' ? 'active' : '' }}">
+        <i class="bi bi-credit-card-2-back"></i> Mercado Pago
+    </a>
 @endif
 </nav>

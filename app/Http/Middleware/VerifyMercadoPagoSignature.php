@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use App\Services\MercadoPagoSettings;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
@@ -25,7 +26,7 @@ class VerifyMercadoPagoSignature
 {
     public function handle(Request $request, Closure $next): Response
     {
-        $secret = config('mercadopago.webhook_secret');
+        $secret = MercadoPagoSettings::webhookSecret();
 
         // Se não configurou o secret, a validação é pulada (dev).
         // Em produção o deploy DEVE preencher MP_WEBHOOK_SECRET.

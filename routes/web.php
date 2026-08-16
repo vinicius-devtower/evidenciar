@@ -23,6 +23,7 @@ use App\Http\Controllers\Financeiro\PagamentoController as FinanceiroPagamentoCo
 use App\Http\Controllers\Dev\InicioController as DevInicioController;
 use App\Http\Controllers\Dev\TemplateController as DevTemplateController;
 use App\Http\Controllers\Dev\PlanoController as DevPlanoController;
+use App\Http\Controllers\Dev\IntegracoesController as DevIntegracoesController;
 use App\Http\Controllers\Dev\TemplatePadraoController as DevTemplatePadraoController;
 use App\Http\Controllers\PublicSiteController;
 use App\Http\Controllers\CheckoutController;
@@ -383,6 +384,10 @@ Route::middleware(['auth', 'role:dev,admin'])
         // Templates Padrão — referência viva pra equipe de criação
         Route::get('/templates-padrao',         [DevTemplatePadraoController::class, 'index'])->name('templates-padrao.index');
         Route::get('/templates-padrao/{slug}',  [DevTemplatePadraoController::class, 'show'])->name('templates-padrao.show');
+
+        // Integrações — credenciais de provedores externos, editáveis pelo SuperAdmin
+        Route::get('/integracoes/mercadopago',  [DevIntegracoesController::class, 'mercadoPago'])->name('integracoes.mercadopago');
+        Route::put('/integracoes/mercadopago',  [DevIntegracoesController::class, 'updateMercadoPago'])->name('integracoes.mercadopago.update');
     });
 
 
