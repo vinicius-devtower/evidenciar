@@ -10,7 +10,7 @@
       <p>Esqueça a tela em branco e o design amador. Nossos templates premium foram estruturados por especialistas com um único objetivo: <strong class="cor-verde">transformar a sua audiência em clientes de alto valor.</strong></p>
     </div>
     <div class="text-center mt-5 d-flex justify-content-center align-items-center gap-35">
-      <a href="{{ route('jornada.start') }}" class="btn-primary">Quero meu site a partir de R$57,90 / mês</a>
+      <a href="{{ route('jornada.start') }}" class="btn-primary">Quero meu site a partir de R$46,32 / mês</a>
       <a href="#" class="btn-clean">Falar com Equipe no WhatsApp</a>
     </div>
 

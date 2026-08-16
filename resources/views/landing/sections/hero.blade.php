@@ -24,7 +24,7 @@
             </div>
 
             <div class="buttons-hero mt-5">
-              <a href="{{ route('jornada.start') }}" class="btn-primary">Quero meu site a partir de R$57,90 / mês</a>
+              <a href="{{ route('jornada.start') }}" class="btn-primary">Quero meu site a partir de R$46,32 / mês</a>
               <a href="#" class="btn-clean">Falar com Equipe no WhatsApp</a>
             </div>
 
