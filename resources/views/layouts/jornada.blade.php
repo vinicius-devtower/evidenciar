@@ -97,12 +97,10 @@
         }
         .ev-hero__body{
             flex:1;
-            display:flex; align-items:center; justify-content:center;
+            display:flex; flex-direction:column; align-items:center; justify-content:center;
         }
         .ev-hero__inner{
-            max-width:520px;
-            display:flex; flex-direction:column; align-items:center; gap:24px;
-            text-align:center;
+            max-width:640px;
             color:#e9eef6;
         }
         .ev-hero__eva{
@@ -118,8 +116,7 @@
         .ev-hero__text p:last-child{ margin-bottom:0; }
 
         .ev-hero__cta{
-            display:flex; justify-content:center;
-            max-width:820px; margin:32px auto 0; width:100%;
+            max-width:820px; margin-top:32px;
         }
 
         .ev-hero__logo{
