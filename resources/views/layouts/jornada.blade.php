@@ -100,8 +100,9 @@
             display:flex; align-items:center; justify-content:center;
         }
         .ev-hero__inner{
-            max-width:720px;
-            display:flex; align-items:center; gap:40px;
+            max-width:520px;
+            display:flex; flex-direction:column; align-items:center; gap:24px;
+            text-align:center;
             color:#e9eef6;
         }
         .ev-hero__eva{
@@ -117,7 +118,7 @@
         .ev-hero__text p:last-child{ margin-bottom:0; }
 
         .ev-hero__cta{
-            display:flex; justify-content:flex-end;
+            display:flex; justify-content:center;
             max-width:820px; margin:32px auto 0; width:100%;
         }
 
