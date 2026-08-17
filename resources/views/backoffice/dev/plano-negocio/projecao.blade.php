@@ -32,7 +32,9 @@
                     </tr>
                 </thead>
                 <tbody>
-                    @php($mesesReais = $metrics->values())
+                    @php
+                        $mesesReais = $metrics->values();
+                    @endphp
                     @foreach ($linhas as $i => $l)
                         @php
                             $saldoPositivo = $l['saldo_cents'] >= 0;
