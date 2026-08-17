@@ -8,9 +8,18 @@
             </ul>
         </div>
 
+        @php $howContent = ($content ?? [])['howitworks'] ?? null; @endphp
         <div class="section-call mt-5">
-            <h2>Do zero ao seu <strong class="cor-verde">palco digital</strong> em 3 passos<br>(Zero Código)</h2>
-            <p>O maior medo de quem nunca teve site não é o preço, é achar que não vai saber usar. Na Evidenciar você mesmo cria o seu hoje — se sabe mandar um e-mail, sabe editar seu site.</p>
+            @if ($howContent && !empty($howContent['title']))
+                <h2>{{ $howContent['title'] }}</h2>
+            @else
+                <h2>Do zero ao seu <strong class="cor-verde">palco digital</strong> em 3 passos<br>(Zero Código)</h2>
+            @endif
+            @if ($howContent && !empty($howContent['subtitle']))
+                <p>{{ $howContent['subtitle'] }}</p>
+            @else
+                <p>O maior medo de quem nunca teve site não é o preço, é achar que não vai saber usar. Na Evidenciar você mesmo cria o seu hoje — se sabe mandar um e-mail, sabe editar seu site.</p>
+            @endif
         </div>
 
     </div>

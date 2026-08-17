@@ -10,14 +10,23 @@
                     </ul>
                 </div>
 
-                <h2 class="pricing-title">
-                    Menos que a venda de um único<br>
-                    <span class="highlight">ingresso ou sessão.</span>
-                </h2>
+                @php $pricingContent = ($content ?? [])['pricing_header'] ?? null; @endphp
+                @if ($pricingContent && !empty($pricingContent['title']))
+                    <h2 class="pricing-title">{{ $pricingContent['title'] }}</h2>
+                @else
+                    <h2 class="pricing-title">
+                        Menos que a venda de um único<br>
+                        <span class="highlight">ingresso ou sessão.</span>
+                    </h2>
+                @endif
 
-                <p class="pricing-subtitle">
-                    Escolha o <span class="highlight">plano ideal</span> para o momento da sua carreira.
-                </p>
+                @if ($pricingContent && !empty($pricingContent['subtitle']))
+                    <p class="pricing-subtitle">{{ $pricingContent['subtitle'] }}</p>
+                @else
+                    <p class="pricing-subtitle">
+                        Escolha o <span class="highlight">plano ideal</span> para o momento da sua carreira.
+                    </p>
+                @endif
 
             </div>
         </div>

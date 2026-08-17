@@ -6,9 +6,18 @@
                 <li><img src="{{ asset('landing/assets/img/icon/accept.svg') }}" alt="" width="18" height="18"> Somos Referência</li>
             </ul>
         </div>
+        @php $professionalsContent = ($content ?? [])['professionals'] ?? null; @endphp
         <div class="section-call mt-5">
-            <h2>A escolha de <br><strong class="cor-verde">Profissionais</strong> que crescem</h2>
-            <p>Profissionais de alto nível não perdem tempo com ferramentas amadoras. Veja o <strong class="cor-verde">impacto imediato que uma vitrine digital séria</strong> trouxe para a credibilidade e para os honorários de quem já usa a Evidenciar.</p>
+            @if ($professionalsContent && !empty($professionalsContent['title']))
+                <h2>{{ $professionalsContent['title'] }}</h2>
+            @else
+                <h2>A escolha de <br><strong class="cor-verde">Profissionais</strong> que crescem</h2>
+            @endif
+            @if ($professionalsContent && !empty($professionalsContent['subtitle']))
+                <p>{{ $professionalsContent['subtitle'] }}</p>
+            @else
+                <p>Profissionais de alto nível não perdem tempo com ferramentas amadoras. Veja o <strong class="cor-verde">impacto imediato que uma vitrine digital séria</strong> trouxe para a credibilidade e para os honorários de quem já usa a Evidenciar.</p>
+            @endif
         </div>
 
         <div class="row"></div>

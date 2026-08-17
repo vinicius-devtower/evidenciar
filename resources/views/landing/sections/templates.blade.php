@@ -5,9 +5,18 @@
         <li><img src="{{ asset('landing/assets/img/icon/accept.svg') }}" alt="" width="18" height="18"> Modelos pensados em resultados</li>
       </ul>
     </div>
+    @php $templatesContent = ($content ?? [])['templates_section'] ?? null; @endphp
     <div class="section-call mt-5">
-      <h2>Modelos desenhados para<br>colocar <strong class="cor-verde">você em evidência</strong></h2>
-      <p>Esqueça a tela em branco e o design amador. Nossos templates foram estruturados dentro do que cada profissão exige — sério, sóbrio e <strong class="cor-verde">pensado pra gerar autoridade</strong> pra você.</p>
+      @if ($templatesContent && !empty($templatesContent['title']))
+        <h2>{{ $templatesContent['title'] }}</h2>
+      @else
+        <h2>Modelos desenhados para<br>colocar <strong class="cor-verde">você em evidência</strong></h2>
+      @endif
+      @if ($templatesContent && !empty($templatesContent['subtitle']))
+        <p>{{ $templatesContent['subtitle'] }}</p>
+      @else
+        <p>Esqueça a tela em branco e o design amador. Nossos templates foram estruturados dentro do que cada profissão exige — sério, sóbrio e <strong class="cor-verde">pensado pra gerar autoridade</strong> pra você.</p>
+      @endif
     </div>
     <div class="text-center mt-5 d-flex justify-content-center align-items-center gap-35">
       <a href="{{ route('jornada.start') }}" class="btn-primary">Quero meu site a partir de {{ optional($plans['start'] ?? null)->priceFormatted() ?? 'R$ 49,90' }} / mês</a>

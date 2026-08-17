@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "name": "Evidenciar Institucional",
+    "slug": "evidenciar-institucional",
+    "version": "v1",
+    "description": "A própria landing page pública da Evidenciar (evidenciar.com.br), rodando como um Template do catálogo — editável pelo painel do cliente, como prova viva do produto. Os textos abaixo controlam apenas os títulos/imagens principais; os planos, preços e o FAQ continuam vindo do restante do sistema (não fazem parte deste conteúdo)."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "label": "SEÇÃO 01 — Banner principal",
+      "fields": [
+        {
+          "key": "headline",
+          "label": "Título principal (H1)",
+          "type": "textarea",
+          "max_chars": 140,
+          "eva": true,
+          "required": false,
+          "default": "Sua marca pessoal no topo. O palco digital que ancora sua autoridade."
+        },
+        {
+          "key": "subheadline",
+          "label": "Texto de apoio abaixo do título",
+          "type": "textarea",
+          "max_chars": 200,
+          "eva": true,
+          "required": false,
+          "default": "Reúna suas palestras, mentorias e contatos em um site que reflete o seu verdadeiro valor. Feito para quem vende conhecimento."
+        },
+        {
+          "key": "tags",
+          "label": "Tags do público-alvo (separadas por vírgula)",
+          "type": "text",
+          "max_chars": 100,
+          "required": false,
+          "default": "Palestrantes, Mentores, Coaches, Professores"
+        },
+        {
+          "key": "image_url",
+          "label": "Imagem do banner",
+          "type": "url",
+          "required": false,
+          "default": ""
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "label": "SEÇÃO 02 — Por que a Evidenciar",
+      "fields": [
+        {
+          "key": "title_1",
+          "label": "Bloco 1 · Título",
+          "type": "text",
+          "max_chars": 80,
+          "eva": true,
+          "required": false,
+          "default": "Cobrar caro exige parecer premium."
+        },
+        {
+          "key": "text_1",
+          "label": "Bloco 1 · Texto",
+          "type": "textarea",
+          "max_chars": 400,
+          "eva": true,
+          "required": false,
+          "default": "Sua expertise vale caro, mas o seu site (ou a falta dele) está entregando isso pro seu público? Um perfil de rede social bagunçado, sem organização, dilui sua autoridade e faz o cliente questionar seu preço antes mesmo de te conhecer."
+        },
+        {
+          "key": "image_1_url",
+          "label": "Bloco 1 · Imagem",
+          "type": "url",
+          "required": false,
+          "default": ""
+        },
+        {
+          "key": "title_2",
+          "label": "Bloco 2 · Título",
+          "type": "text",
+          "max_chars": 80,
+          "eva": true,
+          "required": false,
+          "default": "Ancoragem de Preço Imediata"
+        },
+        {
+          "key": "image_2_url",
+          "label": "Bloco 2 · Imagem",
+          "type": "url",
+          "required": false,
+          "default": ""
+        }
+      ]
+    },
+    {
+      "id": "howitworks",
+      "label": "SEÇÃO 03 — Como funciona",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Título da seção",
+          "type": "textarea",
+          "max_chars": 100,
+          "eva": true,
+          "required": false,
+          "default": "Do zero ao seu palco digital em 3 passos (Zero Código)"
+        },
+        {
+          "key": "subtitle",
+          "label": "Texto de apoio",
+          "type": "textarea",
+          "max_chars": 250,
+          "eva": true,
+          "required": false,
+          "default": "O maior medo de quem nunca teve site não é o preço, é achar que não vai saber usar. Na Evidenciar você mesmo cria o seu hoje — se sabe mandar um e-mail, sabe editar seu site."
+        }
+      ]
+    },
+    {
+      "id": "templates_section",
+      "label": "SEÇÃO 04 — Modelos disponíveis",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Título da seção",
+          "type": "textarea",
+          "max_chars": 100,
+          "eva": true,
+          "required": false,
+          "default": "Modelos desenhados para colocar você em evidência"
+        },
+        {
+          "key": "subtitle",
+          "label": "Texto de apoio",
+          "type": "textarea",
+          "max_chars": 250,
+          "eva": true,
+          "required": false,
+          "default": "Esqueça a tela em branco e o design amador. Nossos templates foram estruturados dentro do que cada profissão exige — sério, sóbrio e pensado pra gerar autoridade pra você."
+        }
+      ]
+    },
+    {
+      "id": "professionals",
+      "label": "SEÇÃO 05 — Depoimentos",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Título da seção",
+          "type": "textarea",
+          "max_chars": 100,
+          "eva": true,
+          "required": false,
+          "default": "A escolha de Profissionais que crescem"
+        },
+        {
+          "key": "subtitle",
+          "label": "Texto de apoio",
+          "type": "textarea",
+          "max_chars": 250,
+          "eva": true,
+          "required": false,
+          "default": "Profissionais de alto nível não perdem tempo com ferramentas amadoras. Veja o impacto imediato que uma vitrine digital séria trouxe para a credibilidade e para os honorários de quem já usa a Evidenciar."
+        }
+      ]
+    },
+    {
+      "id": "pricing_header",
+      "label": "SEÇÃO 06 — Cabeçalho dos planos",
+      "fields": [
+        {
+          "key": "title",
+          "label": "Título da seção",
+          "type": "textarea",
+          "max_chars": 100,
+          "eva": true,
+          "required": false,
+          "default": "Menos que a venda de um único ingresso ou sessão."
+        },
+        {
+          "key": "subtitle",
+          "label": "Texto de apoio",
+          "type": "textarea",
+          "max_chars": 150,
+          "eva": true,
+          "required": false,
+          "default": "Escolha o plano ideal para o momento da sua carreira."
+        }
+      ]
+    }
+  ],
+  "notas": [
+    "Os cards de plano/preço vêm do cadastro de Planos (SuperAdmin → Dev → Planos), não deste conteúdo.",
+    "O FAQ, o rodapé e os modais (Comparar planos, Política de Privacidade, Falar com Suporte) são fixos e compartilhados com o resto do sistema — não são editáveis por site individual."
+  ]
+}
