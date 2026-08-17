@@ -54,9 +54,15 @@
                             <td>
                                 <span class="badge bg-secondary">{{ $sub?->status ?? '—' }}</span>
                             </td>
-                            <td>
+                            <td class="text-end">
                                 <a href="{{ route('suporte.assinantes.show', $c) }}"
                                    class="btn btn-sm btn-outline-primary">Abrir</a>
+                                @if (auth()->user()->role === 'admin')
+                                    <form method="POST" action="{{ route('suporte.assinantes.impersonate', $c) }}" class="d-inline">
+                                        @csrf
+                                        <button type="submit" class="btn btn-sm btn-outline-dark">Acessar como cliente</button>
+                                    </form>
+                                @endif
                             </td>
                         </tr>
                     @empty

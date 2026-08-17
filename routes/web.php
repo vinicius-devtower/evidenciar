@@ -30,6 +30,7 @@ use App\Http\Controllers\PublicSiteController;
 use App\Http\Controllers\CheckoutController;
 use App\Http\Controllers\JornadaController;
 use App\Http\Controllers\LandingController;
+use App\Http\Controllers\ImpersonateController;
 
 /*
 |--------------------------------------------------------------------------
@@ -128,6 +129,12 @@ Route::get('/dashboard', function () {
 
 // Home name alias
 Route::get('/home', fn () => redirect('/'))->name('landing');
+
+// Sair do "ver como cliente" (impersonation) — reachable de qualquer
+// página autenticada, não só de dentro de /suporte.
+Route::post('/impersonate/sair', [ImpersonateController::class, 'stop'])
+    ->middleware('auth')
+    ->name('impersonate.stop');
 
 
 /*
@@ -309,6 +316,11 @@ Route::middleware(['auth', 'role:support,admin'])
 
         Route::get('/assinantes',              [SuporteAssinanteController::class, 'index'])->name('assinantes.index');
         Route::get('/assinantes/{assinante}',  [SuporteAssinanteController::class, 'show'])->name('assinantes.show');
+
+        // "Ver como cliente" — restrito a admin (v1: support não impersona ainda).
+        Route::post('/assinantes/{assinante}/impersonar', [ImpersonateController::class, 'start'])
+            ->middleware('role:admin')
+            ->name('assinantes.impersonate');
 
         /*
         |----------------------------------------------------------------------

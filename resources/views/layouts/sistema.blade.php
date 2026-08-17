@@ -26,6 +26,22 @@
 
 <div class="app-wrapper">
 
+    @if (session('impersonate_client_id'))
+        <div class="d-flex align-items-center justify-content-between px-3 py-2"
+             style="background:#132d46;color:#edece1;font-size:14px;">
+            <span>
+                👁 Você está vendo como: <strong>{{ session('impersonate_client_name') }}</strong>
+            </span>
+            <form method="POST" action="{{ route('impersonate.stop') }}" class="m-0">
+                @csrf
+                <button type="submit" class="btn btn-sm"
+                        style="background:transparent;color:#edece1;border:1px solid rgba(237,236,225,.4);border-radius:6px;">
+                    Voltar ao Suporte
+                </button>
+            </form>
+        </div>
+    @endif
+
     <!-- HEADER -->
     <div class="app-header">
         <div class="container-fluid d-flex justify-content-between align-items-center">

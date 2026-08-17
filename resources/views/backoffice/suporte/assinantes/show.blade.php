@@ -5,8 +5,20 @@
     <a href="{{ route('suporte.assinantes.index') }}" class="text-muted small text-decoration-none">
         ← voltar para assinantes
     </a>
-    <h1 class="page-title mb-1">{{ $client->name }}</h1>
-    <p class="page-sub">{{ $client->document ?? '' }}</p>
+    <div class="d-flex align-items-start justify-content-between">
+        <div>
+            <h1 class="page-title mb-1">{{ $client->name }}</h1>
+            <p class="page-sub">{{ $client->document ?? '' }}</p>
+        </div>
+        @auth
+            @if (auth()->user()->role === 'admin')
+                <form method="POST" action="{{ route('suporte.assinantes.impersonate', $client) }}">
+                    @csrf
+                    <button type="submit" class="btn btn-dark btn-sm">Acessar como cliente</button>
+                </form>
+            @endif
+        @endauth
+    </div>
 
     <div class="row g-3">
         <div class="col-md-6">
