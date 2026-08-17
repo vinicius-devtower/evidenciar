@@ -39,6 +39,34 @@
         max-width: 100vw;
         overflow-x: hidden;
     }
+
+    /* O CSS padrão do template posiciona o <ul> do menu mobile com
+       position:absolute + inset relativo ao ancestral posicionado mais
+       próximo — que aqui é o próprio #header (fixed, baixo). Isso colapsa
+       o menu com altura 0 (bottom:20px fica acima do top:60px). Fixando
+       relativo à viewport, sem depender da altura do header. */
+    @media (max-width: 1199px) {
+        .navmenu ul {
+            position: fixed;
+            top: 76px;
+            left: 20px;
+            right: 20px;
+            bottom: 20px;
+            padding: 20px;
+            overflow-y: auto;
+            z-index: 998;
+        }
+
+        .navmenu ul li {
+            margin-bottom: 8px;
+        }
+
+        .navmenu ul a {
+            display: block;
+            padding: 10px 5px;
+            font-size: 18px;
+        }
+    }
 </style>
 
 <header id="header" class="header d-flex align-items-center fixed-top">
