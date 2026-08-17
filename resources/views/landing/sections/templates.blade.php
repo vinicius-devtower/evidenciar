@@ -6,8 +6,8 @@
       </ul>
     </div>
     <div class="section-call mt-5">
-      <h2>Modelos desenhados para<br><strong class="cor-verde">passar autoridade</strong> ao seu cliente</h2>
-      <p>Esqueça a tela em branco e o design amador. Nossos templates foram estruturados dentro do que cada profissão exige — sério, sóbrio e <strong class="cor-verde">dentro das normas éticas de publicidade</strong> de cada categoria.</p>
+      <h2>Modelos desenhados para<br>colocar <strong class="cor-verde">você em evidência</strong></h2>
+      <p>Esqueça a tela em branco e o design amador. Nossos templates foram estruturados dentro do que cada profissão exige — sério, sóbrio e <strong class="cor-verde">pensado pra gerar autoridade</strong> pra você.</p>
     </div>
     <div class="text-center mt-5 d-flex justify-content-center align-items-center gap-35">
       <a href="{{ route('jornada.start') }}" class="btn-primary">Quero meu site a partir de {{ optional($plans['start'] ?? null)->priceFormatted() ?? 'R$ 49,90' }} / mês</a>
@@ -25,21 +25,21 @@
       <div class="carousel-track" id="carouselTrack">
 
         <div class="template-card active"
-          data-title="Modelo: Advocacia"
-          data-desc="Design sóbrio e sério, dentro das normas de publicidade da OAB.">
-          <img src="{{ asset('landing/assets/img/templates/template1.jpeg') }}" alt="Template Advocacia" loading="lazy">
+          data-title="O Mentor"
+          data-desc="Ideal para quem vende mentorias e programas de transformação.">
+          <img src="{{ asset('landing/assets/img/templates/template1.jpeg') }}" alt="Template O Mentor" loading="lazy">
         </div>
 
         <div class="template-card"
-          data-title="Modelo: Contabilidade Consultiva"
+          data-title="O Consultor"
           data-desc="Organizado e objetivo, transmite controle e confiança.">
-          <img src="{{ asset('landing/assets/img/templates/template2.jpeg') }}" alt="Template Contabilidade" loading="lazy">
+          <img src="{{ asset('landing/assets/img/templates/template2.jpeg') }}" alt="Template O Consultor" loading="lazy">
         </div>
 
         <div class="template-card"
-          data-title="Modelo: Consultoria Empresarial"
-          data-desc="Ideal para consultores, arquitetos e engenheiros que vendem serviço técnico.">
-          <img src="{{ asset('landing/assets/img/templates/template3.jpeg') }}" alt="Template Consultoria" loading="lazy">
+          data-title="Palestrante"
+          data-desc="Perfeito para quem vive de palco, presença e autoridade.">
+          <img src="{{ asset('landing/assets/img/templates/template3.jpeg') }}" alt="Template Palestrante" loading="lazy">
         </div>
 
       </div>
@@ -47,9 +47,9 @@
       <div class="template-meta">
 
         <div class="template-text">
-          <h4 id="template-title">Advocacia</h4>
+          <h4 id="template-title">O Mentor</h4>
           <p id="template-desc">
-            Design sóbrio e sério, dentro das normas de publicidade da OAB.
+            Ideal para quem vende mentorias e programas de transformação.
           </p>
         </div>
 

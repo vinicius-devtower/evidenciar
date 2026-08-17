@@ -7,8 +7,8 @@
             </ul>
         </div>
         <div class="section-call mt-5">
-            <h2>A escolha de <br><strong class="cor-verde">escritórios</strong> que crescem</h2>
-            <p>Advogados e contadores não perdem tempo com ferramentas amadoras. Veja o <strong class="cor-verde">impacto imediato que uma vitrine digital séria</strong> trouxe para a credibilidade e para os honorários de quem já usa a Evidenciar.</p>
+            <h2>A escolha de <br><strong class="cor-verde">Profissionais</strong> que crescem</h2>
+            <p>Profissionais de alto nível não perdem tempo com ferramentas amadoras. Veja o <strong class="cor-verde">impacto imediato que uma vitrine digital séria</strong> trouxe para a credibilidade e para os honorários de quem já usa a Evidenciar.</p>
         </div>
 
         <div class="row"></div>
@@ -55,8 +55,8 @@
                                 </div>
                                 <div class="content">
                                     <h4>600<br>visitas Mensais No Site</h4>
-                                    <p>Eu achava que ia gastar R$ 3.000 num site. Na Evidenciar montei o site do meu escritório de Direito Imobiliário em uma tarde. Meus clientes elogiam a seriedade.</p>
-                                    <p><strong class="cor-azul-medio">Dr. Carlos, Advogado</strong></p>
+                                    <p>Eu achava que ia gastar R$ 3.000 num site. Na Evidenciar montei o meu em uma tarde. Meus clientes elogiam a seriedade.</p>
+                                    <p><strong class="cor-azul-medio">Nome Completo Aqui</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -68,8 +68,8 @@
                                 </div>
                                 <div class="content">
                                     <h4>600<br>visitas Mensais No Site</h4>
-                                    <p>Não tinha tempo pra aprender Wix nem paciência pra ficar mandando print de proposta pelo WhatsApp. Hoje meu escritório contábil tem site sério e já fecha cliente novo pela indicação do Google.</p>
-                                    <p><strong class="cor-azul-medio">Dra. Renata, Contadora</strong></p>
+                                    <p>Não tinha tempo pra aprender Wix nem paciência pra ficar mandando print de proposta pelo WhatsApp. Hoje tenho site sério e já fecho cliente novo pela indicação do Google.</p>
+                                    <p><strong class="cor-azul-medio">Nome Completo Aqui</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -82,7 +82,7 @@
                                 <div class="content">
                                     <h4>5<br>Estrelas no Google</h4>
                                     <p>Editar o site é tão fácil quanto postar no Instagram. Troquei o texto e subi minha foto sozinho, sem depender de ninguém. Ficou no ar no mesmo dia.</p>
-                                    <p><strong class="cor-azul-medio">Dr. João, Advogado</strong></p>
+                                    <p><strong class="cor-azul-medio">Nome Completo Aqui</strong></p>
                                 </div>
                             </div>
                         </div>
@@ -95,7 +95,7 @@
                                 <div class="content">
                                     <h4>+1.000<br>Novos Cliques no WhatsApp</h4>
                                     <p>O botão de WhatsApp direto no site mudou meu atendimento. Cliente vê o site, já manda mensagem sabendo exatamente o que eu faço. Menos tempo explicando, mais tempo fechando.</p>
-                                    <p><strong class="cor-azul-medio">Dra. Camila, Consultora</strong></p>
+                                    <p><strong class="cor-azul-medio">Nome Completo Aqui</strong></p>
                                 </div>
                             </div>
                         </div>

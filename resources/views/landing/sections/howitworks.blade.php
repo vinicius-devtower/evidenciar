@@ -9,7 +9,7 @@
         </div>
 
         <div class="section-call mt-5">
-            <h2>3 passos simples.<br>Não precisa de <strong class="cor-verde">programador.</strong></h2>
+            <h2>Do zero ao seu <strong class="cor-verde">palco digital</strong> em 3 passos<br>(Zero Código)</h2>
             <p>O maior medo de quem nunca teve site não é o preço, é achar que não vai saber usar. Na Evidenciar você mesmo cria o seu hoje — se sabe mandar um e-mail, sabe editar seu site.</p>
         </div>
 
@@ -28,7 +28,7 @@
                         <img src="{{ asset('landing/assets/img/how-it-works/escolha-seu-palco.png') }}" alt="" class="img-fluid" loading="lazy">
                     </div>
                     <div class="hwt-content mt-5 cor-areia">
-                        <h3>1. Crie sua conta</h3>
+                        <h3>1. Escolha seu palco</h3>
                         <p>Cadastro em 1 minuto e você já escolhe o modelo pronto pra sua profissão.</p>
                     </div>
                 </div>
@@ -58,9 +58,8 @@
                         <img src="{{ asset('landing/assets/img/how-it-works/publique-seu-link.png') }}" alt="" class="img-fluid" loading="lazy">
                     </div>
                     <div class="hwt-content mt-5 cor-areia">
-                        <h3>3. Publique seu site</h3>
-                        <p>Conecte seu domínio (ex: seuescritorio.com.br) e fique no ar hoje mesmo. Sem esperar 30-60 dias de agência.</p>
-
+                        <h3>3. Publique seu link</h3>
+                        <p>Conecte seu domínio (ex: seunome.com.br) e fique no ar hoje mesmo.</p>
                     </div>
                 </div>
             </div>

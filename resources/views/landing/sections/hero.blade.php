@@ -8,18 +8,18 @@
         <div class="hero-content">
 
           <div class="container-text">
-            <h1 data-aos="fade-up" data-aos-delay="200">Sua empresa fora do Google <strong class="cor-verde">não existe.</strong><br>Tenha seu site profissional<br>no ar <strong class="cor-verde">hoje mesmo.</strong></h1>
-            <p data-aos="fade-up" data-aos-delay="300" class="cor-azul-escuro mt-3">A vitrine digital pronta para Advogados, Contadores e Consultores. Sem custos de agência, sem complexidade técnica.</p>
+            <h1 data-aos="fade-up" data-aos-delay="200">Sua marca pessoal no <strong class="cor-verde">topo.</strong><br>O palco digital que ancora<br><strong class="cor-verde">sua autoridade.</strong></h1>
+            <p data-aos="fade-up" data-aos-delay="300" class="cor-azul-escuro mt-3">Reúna suas palestras, mentorias e contatos em um site que reflete o seu verdadeiro valor. Feito para quem vende conhecimento.</p>
           </div>
 
           <div class="hero-cta" data-aos="fade-up" data-aos-delay="400">
 
             <div class="tags-hero">
               <ul>
-                <li>Advogados</li>
-                <li>Contadores</li>
-                <li>Consultores</li>
-                <li>Arquitetos</li>
+                <li>Palestrantes</li>
+                <li>Mentores</li>
+                <li>Coaches</li>
+                <li>Professores</li>
               </ul>
             </div>
 
@@ -37,7 +37,7 @@
       </div>
 
       <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
-        <img src="{{ asset('landing/assets/img/hero/banner-advogados-v1.jpg') }}" alt="Advogados e contadores em reunião" class="img-fluid">
+        <img src="{{ asset('landing/assets/img/hero/banner-palestrante-v2.png') }}" alt="" class="img-fluid">
       </div>
 
     </div>
