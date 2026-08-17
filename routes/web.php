@@ -24,6 +24,7 @@ use App\Http\Controllers\Dev\InicioController as DevInicioController;
 use App\Http\Controllers\Dev\TemplateController as DevTemplateController;
 use App\Http\Controllers\Dev\PlanoController as DevPlanoController;
 use App\Http\Controllers\Dev\IntegracoesController as DevIntegracoesController;
+use App\Http\Controllers\Dev\PlanoNegocioController as DevPlanoNegocioController;
 use App\Http\Controllers\Dev\TemplatePadraoController as DevTemplatePadraoController;
 use App\Http\Controllers\PublicSiteController;
 use App\Http\Controllers\CheckoutController;
@@ -388,6 +389,18 @@ Route::middleware(['auth', 'role:dev,admin'])
         // Integrações — credenciais de provedores externos, editáveis pelo SuperAdmin
         Route::get('/integracoes/mercadopago',  [DevIntegracoesController::class, 'mercadoPago'])->name('integracoes.mercadopago');
         Route::put('/integracoes/mercadopago',  [DevIntegracoesController::class, 'updateMercadoPago'])->name('integracoes.mercadopago.update');
+
+        // Plano de Negócio — "estamos no trilho?" (uso interno dos sócios)
+        Route::prefix('plano-negocio')->name('plano-negocio.')->group(function () {
+            Route::get('/',              [DevPlanoNegocioController::class, 'index'])->name('index');
+            Route::get('/indicadores',   [DevPlanoNegocioController::class, 'indicadores'])->name('indicadores');
+            Route::post('/indicadores',  [DevPlanoNegocioController::class, 'storeIndicador'])->name('indicadores.store');
+            Route::put('/indicadores/{indicador}', [DevPlanoNegocioController::class, 'updateIndicador'])->name('indicadores.update');
+            Route::get('/projecao',      [DevPlanoNegocioController::class, 'projecao'])->name('projecao');
+            Route::get('/estrategias',   [DevPlanoNegocioController::class, 'estrategias'])->name('estrategias');
+            Route::get('/contrato',      [DevPlanoNegocioController::class, 'contrato'])->name('contrato');
+            Route::post('/contrato/aceitar', [DevPlanoNegocioController::class, 'aceitarContrato'])->name('contrato.aceitar');
+        });
     });
 
 
