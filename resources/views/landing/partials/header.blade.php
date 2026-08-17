@@ -28,6 +28,17 @@
         line-height: 0;
         cursor: pointer;
     }
+
+    /* A página já tem overflow horizontal pré-existente no mobile (hero
+       mais largo que a tela). Isso faz elementos fixed herdarem a largura
+       "vazada" do documento em vez da largura real da viewport, jogando o
+       ícone do menu pra fora da tela. Travando a largura do header
+       explicitamente pra não depender disso. */
+    #header {
+        width: 100vw;
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
 </style>
 
 <header id="header" class="header d-flex align-items-center fixed-top">
