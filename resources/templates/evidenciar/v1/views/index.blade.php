@@ -23,6 +23,8 @@
 
 <body class="index-page">
 
+    @include('landing.partials.header')
+
     <main>
         @include('landing.sections.hero')
         @include('landing.sections.about')
