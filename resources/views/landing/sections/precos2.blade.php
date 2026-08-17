@@ -37,7 +37,7 @@
                 <div class="pricing-card" data-plan="start">
 
                     <h3>Plano Start</h3>
-                    <p class="tagline">Para quem está começando</p>
+                    <p class="tagline">O essencial pra existir no Google</p>
 
                     @if ($planStart)
                         <div class="price">
@@ -66,7 +66,7 @@
                     <div class="feature-group">
                         <h4>Personalize</h4>
                         <ul>
-                            <li>Site One Page</li>
+                            <li>Site One Page (tudo em uma página)</li>
                             <li>Editor do Site (Faça você mesmo)</li>
                             <li>Integração com WhatsApp e Redes Sociais</li>
                         </ul>
@@ -76,7 +76,7 @@
                         <h4>Publique</h4>
                         <ul>
                             <li>Domínio Grátis</li>
-                            <li>1 Conta de E-mail Profissional (10GB)</li>
+                            <li>1 Conta de E-mail Profissional (2GB)</li>
                             <li>Hospedagem e SSL Inclusos</li>
                         </ul>
                     </div>
@@ -99,7 +99,7 @@
                     <div class="badge-top">Recomendado</div>
 
                     <h3 class="text-white">Plano Profissional</h3>
-                    <p class="tagline">Para escritórios em crescimento</p>
+                    <p class="tagline">Mais autoridade e conteúdo pro seu escritório</p>
 
                     @if ($planProfissional)
                         <div class="price">
@@ -140,6 +140,7 @@
                         <ul>
                             <li>Domínio Grátis</li>
                             <li>1 Conta de E-mail Profissional (10GB)</li>
+                            <li>Armazenamento Expandido para Arquivos</li>
                             <li>Hospedagem e SSL Inclusos</li>
                         </ul>
                     </div>
@@ -161,7 +162,7 @@
                 <div class="pricing-card" data-plan="gestao_vip">
 
                     <h3>Gestão VIP</h3>
-                    <p class="tagline">Para quem não tem tempo a perder</p>
+                    <p class="tagline">Pra quem não tem tempo a perder com o site</p>
 
                     @if ($planVip)
                         <div class="price">
@@ -203,7 +204,7 @@
                         <h4>Publique</h4>
                         <ul>
                             <li>Domínio Grátis</li>
-                            <li>5 Contas de E-mail Profissional</li>
+                            <li>3 Contas de E-mail Profissional (15GB cada)</li>
                             <li>Hospedagem e SSL Inclusos</li>
                         </ul>
                     </div>
@@ -213,7 +214,7 @@
                         <ul>
                             <li>Manutenção</li>
                             <li>Backup do site</li>
-                            <li>Otimização básica de SEO</li>
+                            <li>Consultoria Mensal de SEO e Melhorias</li>
                         </ul>
                     </div>
 

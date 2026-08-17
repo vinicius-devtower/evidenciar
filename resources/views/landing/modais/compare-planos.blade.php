@@ -109,9 +109,9 @@
 
               <tr>
                 <td class="text-start">Email profissional</td>
-                <td><i class="bi bi-x text-danger"></i></td>
-                <td class="highlight">1 conta</td>
-                <td>Ilimitado</td>
+                <td>1 conta (2GB)</td>
+                <td class="highlight">1 conta (10GB)</td>
+                <td>3 contas (15GB cada)</td>
               </tr>
 
               <tr>
@@ -124,8 +124,8 @@
               <tr>
                 <td class="text-start">SEO / Consultoria</td>
                 <td><i class="bi bi-x text-danger"></i></td>
-                <td class="highlight"><i class="bi bi-x text-danger"></i></td>
-                <td><i class="bi bi-check-lg text-success"></i></td>
+                <td class="highlight">SEO básico</td>
+                <td>Consultoria mensal</td>
               </tr>
 
              

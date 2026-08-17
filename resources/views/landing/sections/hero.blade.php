@@ -37,7 +37,7 @@
       </div>
 
       <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
-        <img src="{{ asset('landing/assets/img/hero/banner-palestrante-v2.png') }}" alt="" class="img-fluid">
+        <img src="{{ asset('landing/assets/img/hero/banner-advogados-v1.jpg') }}" alt="Advogados e contadores em reunião" class="img-fluid">
       </div>
 
     </div>

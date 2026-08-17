@@ -5,7 +5,7 @@
     <div class="row align-items-center gx-5 justify-content-center">
       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
         <div class="image-wrapper">
-          <img src="{{ asset('landing/assets/img/hero/banner-palestrante-v2.png') }}" alt="" class="img-fluid">
+          <img src="{{ asset('landing/assets/img/hero/banner-advogado-contrato.jpg') }}" alt="Advogado assinando documento" class="img-fluid">
         </div>
       </div>
 
@@ -70,7 +70,7 @@
 
       <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
         <div class="image-wrapper">
-          <img src="{{ asset('landing/assets/img/hero/banner-palestrante-v2.png') }}" alt="" class="img-fluid">
+          <img src="{{ asset('landing/assets/img/hero/banner-consultora-cliente.jpg') }}" alt="Consultora atendendo cliente" class="img-fluid">
         </div>
       </div>
 
