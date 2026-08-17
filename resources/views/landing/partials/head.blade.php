@@ -2,9 +2,9 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Evidenciar</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Evidenciar — Site profissional para Advogados e Contadores</title>
+  <meta name="description" content="A vitrine digital pronta para Advogados, Contadores e Consultores. Site profissional no ar hoje, sem custo de agência e sem complexidade técnica.">
+  <meta name="keywords" content="site para advogado, site para contador, site para escritório de advocacia, criar site advocacia, site contabilidade">
 
   {{-- Favicons --}}
   <link href="{{ asset('landing/assets/img/favicon.png') }}" rel="icon">

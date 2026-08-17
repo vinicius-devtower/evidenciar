@@ -219,35 +219,33 @@
                             <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                                 <h3>
                                     <span class="num">1</span>
-                                    <span class="question">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</span>
+                                    <span class="question">Preciso saber programar pra usar a Evidenciar?</span>
                                     <i class="bi bi-plus-lg faq-toggle"></i>
                                 </h3>
                                 <div class="faq-content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                                    <p>Não. O editor foi feito pra quem nunca mexeu em site na vida — se você sabe mandar um e-mail, você sabe editar o seu. É só clicar no texto, trocar pela sua informação e salvar.</p>
                                 </div>
                             </div>
 
                             <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                                 <h3>
                                     <span class="num">2</span>
-                                    <span class="question">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</span>
+                                    <span class="question">O site funciona bem no celular?</span>
                                     <i class="bi bi-plus-lg faq-toggle"></i>
                                 </h3>
                                 <div class="faq-content">
-                                    <p>Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.</p>
-                                    <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
+                                    <p>Sim. Todos os templates são responsivos — se adaptam automaticamente pra ficar bem em celular, tablet e computador, sem nenhuma configuração extra da sua parte.</p>
                                 </div>
                             </div>
 
                             <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                                 <h3>
                                     <span class="num">3</span>
-                                    <span class="question">Dolor sit amet consectetur adipiscing elit pellentesque?</span>
+                                    <span class="question">Vocês fazem o site pra mim, ou eu que preencho?</span>
                                     <i class="bi bi-plus-lg faq-toggle"></i>
                                 </h3>
                                 <div class="faq-content">
-                                    <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus.</p>
-                                    <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
+                                    <p>No plano Start e Profissional, você mesmo edita — texto, foto e logo, leva poucos minutos. Se preferir não mexer em nada, o plano Gestão VIP inclui o serviço de Concierge: você manda o conteúdo pelo WhatsApp e nossa equipe atualiza o site pra você.</p>
                                 </div>
                             </div>
 
@@ -261,34 +259,33 @@
                             <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                                 <h3>
                                     <span class="num">1</span>
-                                    <span class="question">Ac odio tempor orci dapibus ultrices in iaculis?</span>
+                                    <span class="question">Preciso pagar hospedagem ou domínio por fora?</span>
                                     <i class="bi bi-plus-lg faq-toggle"></i>
                                 </h3>
                                 <div class="faq-content">
-                                    <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.</p>
+                                    <p>Hospedagem, certificado SSL e suporte já estão inclusos em todos os planos. O registro do domínio (~R$40/ano) é cobrado à parte no plano mensal — no plano anual, o domínio sai por nossa conta.</p>
                                 </div>
                             </div>
 
                             <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                                 <h3>
                                     <span class="num">2</span>
-                                    <span class="question">Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</span>
+                                    <span class="question">Qual a diferença entre o plano mensal e o anual?</span>
                                     <i class="bi bi-plus-lg faq-toggle"></i>
                                 </h3>
                                 <div class="faq-content">
-                                    <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
-                                    <p>Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan.</p>
+                                    <p>O plano mensal tem fidelidade de 6 meses. O plano anual sai mais barato (equivalente a pagar 10 meses e ganhar 2 grátis) e já inclui o registro do domínio sem custo adicional.</p>
                                 </div>
                             </div>
 
                             <div class="faq-item aos-init aos-animate faq-active" data-aos="fade-up" data-aos-delay="400">
                                 <h3>
                                     <span class="num">3</span>
-                                    <span class="question">Varius vel pharetra vel turpis nunc eget lorem dolor?</span>
+                                    <span class="question">Posso trocar de plano depois de contratar?</span>
                                     <i class="bi bi-plus-lg faq-toggle"></i>
                                 </h3>
                                 <div class="faq-content">
-                                    <p>Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.</p>
+                                    <p>Sim, o upgrade pode ser feito a qualquer momento direto pelo seu painel — sem precisar recomeçar o cadastro do zero.</p>
                                 </div>
                             </div>
 
@@ -302,35 +299,33 @@
                             <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                                 <h3>
                                     <span class="num">1</span>
-                                    <span class="question">Tortor vitae purus faucibus ornare suspendisse sed nisi lacus?</span>
+                                    <span class="question">E se eu quiser cancelar?</span>
                                     <i class="bi bi-plus-lg faq-toggle"></i>
                                 </h3>
                                 <div class="faq-content">
-                                    <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
-                                    <p>Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est.</p>
+                                    <p>Fora do período de fidelidade, o cancelamento é livre, sem multa. Se ainda estiver dentro da fidelidade, é só chamar nosso suporte que explicamos as condições — sem letras miúdas.</p>
                                 </div>
                             </div>
 
                             <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
                                 <h3>
                                     <span class="num">2</span>
-                                    <span class="question">Tortor dignissim convallis aenean et tortor at risus viverra?</span>
+                                    <span class="question">Como funciona o suporte?</span>
                                     <i class="bi bi-plus-lg faq-toggle"></i>
                                 </h3>
                                 <div class="faq-content">
-                                    <p>In hac habitasse platea dictumst vestibulum rhoncus est pellentesque. Dictumst vestibulum rhoncus est pellentesque elit ullamcorper. Non diam phasellus vestibulum lorem sed. Platea dictumst quisque sagittis purus sit.</p>
+                                    <p>Atendimento via WhatsApp, com um humano de verdade do outro lado. Quem está no plano Gestão VIP tem prioridade máxima na fila.</p>
                                 </div>
                             </div>
 
                             <div class="faq-item aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
                                 <h3>
                                     <span class="num">3</span>
-                                    <span class="question">Venenatis urna cursus eget nunc scelerisque viverra mauris in?</span>
+                                    <span class="question">Meus dados e o site do meu escritório ficam seguros?</span>
                                     <i class="bi bi-plus-lg faq-toggle"></i>
                                 </h3>
                                 <div class="faq-content">
-                                    <p>Mauris ultrices eros in cursus turpis massa tincidunt dui. Pellentesque nec nam aliquam sem et tortor. Habitant morbi tristique senectus et netus et malesuada.</p>
-                                    <p>Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit.</p>
+                                    <p>Sim. Todo site tem certificado SSL (cadeado de segurança) incluso — essencial pra quem atende advogados e contadores — e seguimos a LGPD no tratamento dos seus dados.</p>
                                 </div>
                             </div>
 

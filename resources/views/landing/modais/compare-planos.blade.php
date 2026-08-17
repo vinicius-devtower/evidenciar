@@ -62,18 +62,18 @@
 
                 <th>
                   <h6 class="fw-bold">Start</h6>
-                  <small class="text-muted">{{ optional($plans['start'] ?? null)->priceFormatted() ?? 'R$ 47,90' }}/mês</small>
+                  <small class="text-muted">{{ optional($plans['start'] ?? null)->priceFormatted() ?? 'R$ 49,90' }}/mês</small>
                 </th>
 
                 <th class="highlight">
                   <div class="badge bg-success mb-2">Mais popular</div>
                   <h6 class="fw-bold">Profissional</h6>
-                  <small>{{ optional($plans['profissional'] ?? null)->priceFormatted() ?? 'R$ 97,90' }}/mês</small>
+                  <small>{{ optional($plans['profissional'] ?? null)->priceFormatted() ?? 'R$ 89,90' }}/mês</small>
                 </th>
 
                 <th>
                   <h6 class="fw-bold">Gestão VIP</h6>
-                  <small class="text-muted">{{ optional($plans['gestao_vip'] ?? null)->priceFormatted() ?? 'R$ 297,90' }}/mês</small>
+                  <small class="text-muted">{{ optional($plans['gestao_vip'] ?? null)->priceFormatted() ?? 'R$ 189,90' }}/mês</small>
                 </th>
               </tr>
             </thead>

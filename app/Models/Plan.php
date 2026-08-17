@@ -47,8 +47,12 @@ class Plan extends Model
         ],
     ];
 
-    /** Desconto padrão do ciclo anual quando o plano não tem annual_price_cents definido. */
-    public const ANNUAL_DEFAULT_DISCOUNT = 0.20;
+    /**
+     * Quantos meses o cliente paga de fato no ciclo anual (fallback quando
+     * o plano não tem annual_price_cents definido) — "pague 10, leve 12",
+     * o mesmo enquadramento usado no plano de negócios ("2 meses grátis").
+     */
+    public const ANNUAL_MONTHS_CHARGED = 10;
 
     protected $fillable = [
         'slug', 'name', 'description', 'price_cents', 'annual_price_cents', 'billing_cycle', 'is_active', 'features',
@@ -75,14 +79,14 @@ class Plan extends Model
     /**
      * Preço anual "à vista" em centavos. Usa annual_price_cents se
      * preenchido (editável em /dev/planos); senão calcula
-     * ANNUAL_DEFAULT_DISCOUNT sobre 12x o preço mensal.
+     * ANNUAL_MONTHS_CHARGED meses ("pague 10, leve 12").
      */
     public function annualPriceCents(): int
     {
         if (!empty($this->annual_price_cents)) {
             return $this->annual_price_cents;
         }
-        return (int) round($this->price_cents * 12 * (1 - self::ANNUAL_DEFAULT_DISCOUNT));
+        return $this->price_cents * self::ANNUAL_MONTHS_CHARGED;
     }
 
     public function annualPriceFormatted(): string

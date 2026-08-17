@@ -11,12 +11,12 @@
                 </div>
 
                 <h2 class="pricing-title">
-                    Menos que a venda de um único<br>
-                    <span class="highlight">ingresso ou sessão.</span>
+                    Menos que um <span class="highlight">cafezinho por dia.</span><br>
+                    Uma agência cobraria R$ 2.500,00 por isso.
                 </h2>
 
                 <p class="pricing-subtitle">
-                    Escolha o <span class="highlight">plano ideal</span> para o momento da sua carreira.
+                    Escolha o <span class="highlight">plano ideal</span> para o seu escritório.
                 </p>
 
             </div>

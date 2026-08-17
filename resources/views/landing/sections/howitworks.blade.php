@@ -9,8 +9,8 @@
         </div>
 
         <div class="section-call mt-5">
-            <h2>Do zero ao seu palco digital<br>em 3 passos <strong class="cor-verde">(Zero Código)</strong></h2>
-            <p>Esqueça a complexidade. Na Evidenciar, você mesmo cira seu site hoje, tão fácil quanto usar suas redes sociais. Nós cuidamos da tecnologia, você foca no conteúdo.</p>
+            <h2>3 passos simples.<br>Não precisa de <strong class="cor-verde">programador.</strong></h2>
+            <p>O maior medo de quem nunca teve site não é o preço, é achar que não vai saber usar. Na Evidenciar você mesmo cria o seu hoje — se sabe mandar um e-mail, sabe editar seu site.</p>
         </div>
 
     </div>
@@ -28,8 +28,8 @@
                         <img src="{{ asset('landing/assets/img/how-it-works/escolha-seu-palco.png') }}" alt="" class="img-fluid" loading="lazy">
                     </div>
                     <div class="hwt-content mt-5 cor-areia">
-                        <h3>1. Escolha seu palco</h3>
-                        <p>Templates estratégicos e prontos para vender palestras, cursos ou mentorias.</p>
+                        <h3>1. Crie sua conta</h3>
+                        <p>Cadastro em 1 minuto e você já escolhe o modelo pronto pra sua profissão.</p>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                     </div>
                     <div class="hwt-content mt-5 cor-areia">
                         <h3>2. Personalize rápido</h3>
-                        <p>Altere textos, cores e suba sua foto em poucos cliques. É impossível quebrar o desing.</p>
+                        <p>Troque texto, coloque seu logo e escolha a cor da sua marca. Impossível quebrar o design.</p>
                     </div>
                 </div>
             </div>
@@ -58,8 +58,8 @@
                         <img src="{{ asset('landing/assets/img/how-it-works/publique-seu-link.png') }}" alt="" class="img-fluid" loading="lazy">
                     </div>
                     <div class="hwt-content mt-5 cor-areia">
-                        <h3>3. Publique seu link</h3>
-                        <p>Conecte seu domínio (ex: seunome.com.br) e tenhas um link de peso para enviar aos clientes.</p>
+                        <h3>3. Publique seu site</h3>
+                        <p>Conecte seu domínio (ex: seuescritorio.com.br) e fique no ar hoje mesmo. Sem esperar 30-60 dias de agência.</p>
 
                     </div>
                 </div>
@@ -72,7 +72,7 @@
     <div class="container mt-5 mb-5">
         <div class="row text-center">
             <div>
-                <a href="{{ route('jornada.start') }}" class="btn-primary">Quero meu site a partir de {{ optional($plans['start'] ?? null)->priceFormatted() ?? 'R$ 47,90' }} / mês</a>
+                <a href="{{ route('jornada.start') }}" class="btn-primary">Quero meu site a partir de {{ optional($plans['start'] ?? null)->priceFormatted() ?? 'R$ 49,90' }} / mês</a>
             </div>
         </div>
     </div>
