@@ -47,10 +47,17 @@
        relativo à viewport, sem depender da altura do header. */
     @media (max-width: 1199px) {
         .navmenu ul {
+            /* left+right (em vez de width explícito) fica sujeito ao
+               overflow horizontal pré-existente da página em mobile real
+               (window.innerWidth pode refletir a largura "vazada" do
+               documento, não a da viewport visível) — testado e confirmado.
+               width:100vw resolve certo independente disso. */
             position: fixed;
             top: 76px;
             left: 20px;
-            right: 20px;
+            width: calc(100vw - 40px);
+            max-width: calc(100vw - 40px);
+            box-sizing: border-box;
             bottom: 20px;
             padding: 20px;
             overflow-y: auto;
