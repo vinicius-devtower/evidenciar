@@ -7,8 +7,9 @@
   <meta name="keywords" content="">
 
   {{-- Favicons --}}
-  <link href="{{ asset('landing/assets/img/favicon.png') }}" rel="icon">
-  <link href="{{ asset('landing/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="{{ asset('landing/assets/img/logo/favicon.svg') }}" rel="icon" type="image/svg+xml">
+  <link href="{{ asset('landing/assets/img/logo/favicon.png') }}" rel="icon" type="image/png">
+  <link href="{{ asset('landing/assets/img/logo/favicon.png') }}" rel="apple-touch-icon">
 
   {{-- Fonts --}}
   <link rel="preconnect" href="https://fonts.googleapis.com">
