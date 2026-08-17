@@ -8,6 +8,26 @@
     section[id] {
         scroll-margin-top: 80px;
     }
+
+    /* --nav-color (tema padrão do template) é igual a --cor-areia (fundo
+       do header) — os links do menu ficavam invisíveis, só "Home"
+       aparecia por estar com a classe .active (cor verde do :hover).
+       Sobrescrevendo pra cor de texto real do site. */
+    .navmenu a {
+        color: var(--cor-azul-escuro) !important;
+    }
+
+    .navmenu a:hover,
+    .navmenu .active {
+        color: var(--cor-verde) !important;
+    }
+
+    .mobile-nav-toggle {
+        color: var(--cor-azul-escuro);
+        font-size: 28px;
+        line-height: 0;
+        cursor: pointer;
+    }
 </style>
 
 <header id="header" class="header d-flex align-items-center fixed-top">
