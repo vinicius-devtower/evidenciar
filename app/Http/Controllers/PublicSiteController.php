@@ -28,13 +28,18 @@ class PublicSiteController extends Controller
             . str_replace('/', '.', $templateVersion->path)
             . '.views.index';
         abort_unless(view()->exists($viewPath), 404);
-        // return view($viewPath, [
-        //     'site'    => $site,
-        //     'content' => $site->content ?? [],
-        // ]);
-        // return response($site->compiled_html);
+
+        // Se ainda não existe HTML compilado (site publicado direto, sem
+        // passar pela fila de publicação), gera e persiste uma vez.
+        // NUNCA chamar renderSite() de novo aqui: se o build falhar em
+        // produzir HTML (ex.: exceção engolida em algum ponto), isso
+        // vira recursão infinita e derruba o PHP-FPM por estouro de memória.
         if (!$site->compiled_html) {
-            return $this->renderSite($site);
+            $html = app(\App\Services\SiteBuilderService::class)->build($site);
+            $site->compiled_html = $html;
+            $site->save();
+
+            return response($html);
         }
 
         return response($site->compiled_html);

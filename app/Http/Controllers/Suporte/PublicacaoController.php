@@ -123,10 +123,12 @@ class PublicacaoController extends Controller
             try {
                 $builder = app(\App\Services\SiteBuilderService::class);
                 $html = $builder->build($site);
-                $site->update([
-                    'status'        => 'published',
-                    'compiled_html' => $html,
-                ]);
+                // 'compiled_html' não está no $fillable do model Site —
+                // update() descartaria o valor silenciosamente. Setando
+                // o atributo direto pra garantir que persiste de verdade.
+                $site->status = 'published';
+                $site->compiled_html = $html;
+                $site->save();
             } catch (\Throwable $e) {
                 // Não quebramos a transição: log + sinalização
                 ActivityLog::record(

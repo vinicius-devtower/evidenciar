@@ -63,11 +63,13 @@ class PublicationQueueController extends Controller
                 'notes'  => $request->input('notes'),
             ]);
 
-            // Atualiza o site com HTML compilado
-            $site->update([
-                'status' => 'published',
-                'compiled_html' => $html,
-            ]);
+            // Atualiza o site com HTML compilado.
+            // 'compiled_html' não está no $fillable do model Site —
+            // update() descartaria o valor silenciosamente. Setando o
+            // atributo direto pra garantir que persiste de verdade.
+            $site->status = 'published';
+            $site->compiled_html = $html;
+            $site->save();
 
             // Logs
             ActivityLog::record(

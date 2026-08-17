@@ -16,6 +16,7 @@ class Site extends Model
         'slug',
         'status',
         'content',
+        'compiled_html',
     ];
     protected $casts = [
         'content' => 'array',
